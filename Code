@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameplayManager : MonoBehaviour
+public class GamePlayManager : MonoBehaviour
 {
     [SerializeField] GameObject targetPrefab;
 
@@ -17,6 +17,6 @@ public class GameplayManager : MonoBehaviour
 
         Vector3 randomtargetPos = new Vector3 (xPos, yPos, 0);
 
-        Instantiate(targetPrefab);
+        Instantiate(targetPrefab, randomtargetPos, Quaternion.identity);
     }
 }
